@@ -3,8 +3,6 @@ import getProducts from "@/services/getProducts";
 import getProductsByCategory from "@/services/getProductsByCategory";
 
 export default async function Products(props: any) {
-  console.log(props.searchParams.catName);
-
   var productsData: Promise<Product[]>;
   const catName = props.searchParams.catName;
 
